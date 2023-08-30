@@ -22,6 +22,8 @@ public class Program {
         miles.setWeight(70);
         miles.setSteps(43002);
         miles.setPressure("120/70");
+        System.out.println(miles.toString());
+        System.out.println();
         miles.printAccountInfo();
         System.out.println();
         jonathan.setSteps(200000);

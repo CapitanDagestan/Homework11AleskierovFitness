@@ -38,7 +38,64 @@ public class User {
         this.steps = steps;
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public int getBirthDay() {
+        return birthDay;
+    }
+
+    public int getBirthMonth() {
+        return birthMonth;
+    }
+
+    public int getBirthYear() {
+        return birthYear;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public long getNumber() {
+        return number;
+    }
+
+    public String getSecondName() {
+        return secondName;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public String getPressure() {
+        return pressure;
+    }
+
+    public int getSteps() {
+        return steps;
+    }
+
     public User() {
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "firstName='" + firstName + '\'' +
+                ", birthDay=" + birthDay +
+                ", birthMonth=" + birthMonth +
+                ", birthYear=" + birthYear +
+                ", email='" + email + '\'' +
+                ", number=" + number +
+                ", secondName='" + secondName + '\'' +
+                ", weight=" + weight +
+                ", pressure='" + pressure + '\'' +
+                ", steps=" + steps +
+                ", age=" + (2020 - birthYear) +
+                '}';
     }
 
     void printAccountInfo(){
